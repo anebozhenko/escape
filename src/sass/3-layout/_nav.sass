@@ -1,0 +1,42 @@
+.nav
+	display: flex
+	&__item:not(:last-child)
+		margin-right: 30px
+	&__link
+		font-size: 18px
+		color: #fff
+		font-weight: 300
+		&:hover
+			color: #fff - 100
+
+
+.nav-link
+	display: none
+	width: 31px
+	height: 31px
+	background-color: transparent
+	border: none
+	background-image: url('../img/menu.svg')
+	cursor: pointer
+
+@media screen and (max-width: 766px)
+	.nav
+		background-color: rgba(#111, .99)
+		display: none
+		position: absolute
+		margin-left: -110px
+		border: 1px solid rgba(#fff, .5)
+		border-radius: 3px
+		&_active
+			display: block
+		&__item
+			width: 100%
+		&__link
+			display: block
+			text-align: center
+			padding: 15px 20px
+			width: 100%
+			font-size: 22px
+			border-bottom: 1px solid rgba(#fff, .5)
+	.nav-link
+		display: block

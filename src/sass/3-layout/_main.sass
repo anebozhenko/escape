@@ -1,0 +1,462 @@
+.hero
+	height: 100vh
+	background-position: center center
+	background-size: cover
+	&__inner
+		height: inherit
+		padding: 125px 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+	&__top-text
+		font-size: 32px
+		color: #fff
+		font-weight: 200
+		margin-bottom: 50px
+	&__main-text
+		text-transform: uppercase
+		font-size: 66px
+		color: #fff
+		font-weight: 600
+		margin-bottom: 80px
+	&__button
+
+@media screen and (max-width: 766px)
+	.hero
+		&__top-text
+			margin-bottom: 16px
+		&__main-text
+			font-size: 42px
+			margin-bottom: 20px
+
+.development
+	&__inner
+		background-image: url(../img/section-1-bg-icon.png)
+		background-repeat: no-repeat
+		background-position: right center
+	&__block
+		width: 70%
+	&__title
+		font-size: 60px
+		color: #222
+		font-weight: 200
+		margin-bottom: 35px
+	&__strong
+		font-weight: 600
+	&__text
+		font-size: 18px
+		line-height: 24px
+		color: #777
+		p:not(:last-child)
+			margin-bottom: 30px
+
+@media screen and (max-width: 766px)
+	.development
+		&__title
+			font-size: 42px
+
+@media screen and (max-width: 960px)
+	.development,
+		&__inner
+			background-image: none
+		&__block
+			width: 100%
+
+.branding
+	background-color: #fafafa
+	&__inner
+		background-image: url(../img/section-2-bg-icon.png)
+		background-repeat: no-repeat
+		background-position: left center
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__block
+		float: right
+		width: 65%
+	&__title
+		font-size: 60px
+		color: #222
+		font-weight: 200
+		margin-bottom: 35px
+	&__strong
+		font-weight: 600
+	&__text
+		font-size: 18px
+		line-height: 24px
+		color: #777
+		p:not(:last-child)
+			margin-bottom: 30px
+
+@media screen and (max-width: 766px)
+	.branding
+		&__title
+			font-size: 42px
+
+@media screen and (max-width: 960px)
+	.branding,
+		&__inner
+			background-image: none
+		&__block
+			width: 100%
+
+.skills
+	&__inner
+	&__items
+
+.s-items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		width: 45%
+		margin-bottom: 40px
+		&:nth-child(5),
+		&:nth-child(6)
+			margin-bottom: 0
+	&__icon
+		border-radius: 50%
+		width: 72px
+		height: 71px
+		background-color: #222
+		background-repeat: no-repeat
+		background-position: center center
+		float: left
+		margin-right: 18px
+		margin-bottom: 18px
+	&__title
+		font-size: 22px
+		color: #222
+		font-weight: 500
+		margin-bottom: 5px
+	&__text
+		font-size: 18px
+		line-height: 18px
+		color: #777
+
+@media screen and (max-width: 1050px)
+	.s-items
+		&__item
+			width: 42%
+			text-align: center
+		&__icon
+			float: none
+			margin: auto
+			margin-bottom: 20px
+
+@media screen and (max-width: 650px)
+	.s-items
+		justify-content: space-around
+		&__item
+			width: 70%
+			&:nth-child(5)
+				margin-bottom: 40px
+
+@media screen and (max-width: 400px)
+	.s-items
+		&__item
+			width: 95%
+
+.clients
+	background-color: #fafafa
+	&__inner
+		padding: 100px 0
+	&__top
+		text-align: center
+		margin-bottom: 45px
+	&__title
+		font-size: 60px
+		color: #222
+		font-weight: 200
+	&__strong
+		font-weight: 600
+	&__top-text
+		font-size: 22px
+		color: #777
+
+@media screen and (max-width: 766px)
+	.clients
+		&__inner
+			padding: 50px 20px
+		&__title
+			font-size: 42px
+
+.c-items
+	&__item
+		display: flex
+		align-items: center
+		&:not(:last-child)
+			margin-bottom: 40px
+	&__photo
+		width: 225px
+		height: 225px
+		background-color: #111
+		border: 7px solid #fff
+		border-radius: 50%
+		flex-shrink: 0
+		&_left
+		&_right
+			order: 1
+	&__cloud
+		min-height: 175px
+		border: 2px solid #f2f2f2
+		position: relative
+		background-color: #fff
+		border-radius: 3px
+		padding: 30px 8%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		&_arrow
+			&::after
+				content: ''
+				display: block
+				width: 21px
+				height: 27px
+				background-image: url(../img/arrow.png)
+				position: absolute
+				transform: translateY(-50%)
+				top: 50%
+			&_left
+				margin-left: 35px
+				&::after
+					left: -21px
+			&_right
+				margin-right: 35px
+				&::after
+					transform: translateY(-50%) rotate(180deg)
+					right: -21px
+	&__text
+		color: #777
+		font-size: 26px
+		line-height: 28px
+		margin-bottom: 10px
+	&__author
+		font-size: 20px
+		color: #7690c5
+
+@media screen and (max-width: 910px)
+	.c-items
+		&__photo
+			display: none
+		&__cloud
+			text-align: center
+			margin: 0
+			width: 100%
+			&::after
+				display: none
+
+.links
+	&__inner
+		min-height: 160px
+		padding: 0
+	&__items
+
+@media screen and (max-width: 1038px)
+	.links
+		&__inner
+			padding: 20px 0
+
+.l-items
+	min-height: inherit
+	display: flex
+	align-items: center
+	justify-content: space-around
+	flex-wrap: wrap
+	&__item
+		margin: 20px
+	&__link
+	&__img
+
+.team
+	background-color: #111
+	&__inner
+		padding: 100px 0
+	&__top
+		text-align: center
+		margin-bottom: 70px
+	&__title
+		font-size: 60px
+		color: #fff
+		font-weight: 200
+	&__strong
+		font-weight: 600
+	&__top-text
+		font-size: 22px
+		color: #777
+	&__items
+		margin-bottom: 50px
+	&__bottom
+	&__bottom-text
+		margin: auto
+		max-width: 650px
+		text-align: center
+		font-weight: 300
+		font-size: 20px
+		color: #ebebeb
+
+@media screen and (max-width: 766px)
+	.team
+		&__inner
+			padding: 50px 20px
+		&__title
+			font-size: 42px
+
+.t-items
+	display: flex
+	justify-content: space-around
+	&__item
+		text-align: center
+	&__photo
+		border-radius: 50%
+		border: 7px solid #fff
+		background-color: #111
+		width: 225px
+		height: 225px
+		margin-bottom: 20px
+	&__name
+		font-size: 18px
+		color: #fff
+		font-weight: 500
+	&__position
+		color: #ebebeb
+	&__social-links
+		display: flex
+		justify-content: center
+	&__social-link
+		border: 3px solid #fff
+		background-color: #111
+		display: block
+		width: 45px
+		height: 45px
+		border-radius: 50%
+		margin: 5px
+		transition: background-color .2s, border-color .15s ease-in-out
+		background-repeat: no-repeat
+		background-position: center center
+		&_twitter
+			background-image: url(../img/twitter.png)
+			&:hover
+				border-color: #00aced
+				background-color: #00aced
+		&_facebook
+			background-image: url(../img/facebook.png)
+			&:hover
+				border-color: #3b5998
+				background-color: #3b5998
+		&_pinterest
+			background-image: url(../img/pinterest.png)
+			&:hover
+				border-color: #cb2028
+				background-color: #cb2028
+		&_google
+			background-image: url(../img/google+.png)
+			&:hover
+				border-color: #d95232
+				background-color: #d95232
+
+@media screen and (max-width: 910px)
+	.t-items
+		flex-wrap: wrap
+		&__item
+			width: 48%
+			&:not(:last-child)
+				margin-bottom: 20px
+		&__photo
+			margin: auto
+			margin-bottom: 20px
+
+@media screen and (max-width: 620px)
+	.t-items
+		&__item
+			width: 100%
+
+.contact
+	background-color: #7690c5
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__hello
+		width: 48%
+	&__title
+		font-size: 60px
+		font-weight: 300
+		margin-top: -15px
+		color: #fff
+	&__strong
+		font-weight: 500
+	&__text
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+		margin-bottom: 30px
+	&__items
+	&__form
+		width: 48%
+
+@media screen and (max-width: 766px)
+	.contact
+		&__title
+			font-size: 42px
+
+.contact-items
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		width: 48%
+		display: flex
+		align-items: center
+		margin-bottom: 30px
+		&:nth-child(5),
+		&:nth-child(6)
+			margin-bottom: 0
+	&__icon
+		width: 31px
+		height: 31px
+		margin-right: 10px
+		background-repeat: no-repeat
+		background-position: center center
+		&_mobile
+			background-image: url(../img/mobile-icon.png)
+		&_mail
+			background-image: url(../img/mail-icon.png)
+		&_twitter
+			background-image: url(../img/twitter-icon-b.png)
+		&_facebook
+			background-image: url(../img/facebook-icon.png)
+		&_google
+			background-image: url(../img/google+-icon.png)
+		&_pinterest
+			background-image: url(../img/pinterest-icon.png)
+	&__link
+		font-weight: 300
+		color: #fff
+		&:hover
+			text-decoration: underline
+
+@media screen and (max-width: 910px)
+	.contact
+		&__inner
+			flex-direction: column
+		&__hello
+			width: 100%
+			text-align: center
+			margin-bottom: 40px
+		&__form
+			width: 100%
+	.contact-items
+		&__item
+			padding-left: 11%
+
+@media screen and (max-width: 650px)
+	.contact-items
+		flex-wrap: wrap
+		&__item
+			padding-left: 0
+			width: 100%
+			&:nth-child(5)
+				margin-bottom: 30px
